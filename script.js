@@ -70,9 +70,6 @@ function mouseMoved(evt) {
   x = evt.offsetX;
   y = evt.offsetY;
 
-  ctxImage.putImageData(imageData, 0, 0);
-  ctxMap.putImageData(disMapData, 0, 0);
-
   let mouseXratio = (1 / ctxImage.canvas.width) * x * 2 - 1;
   let mouseYratio = (1 / ctxImage.canvas.height) * y * 2 - 1;
 
